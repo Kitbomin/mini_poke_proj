@@ -1,7 +1,7 @@
 package org.example.myspring.common.enums;
 
 public enum Type {
-    NOMAL,
+    NORMAL,
     FIRE,
     GRASS,
     WATER
