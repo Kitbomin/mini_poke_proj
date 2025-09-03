@@ -14,13 +14,11 @@ public class PlayerPokemon extends BaseTimeEntity {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "player_id")
     @ManyToOne
     @JoinColumn(name = "player_id", nullable = false,
             foreignKey = @ForeignKey(name = "fk_playerid_userid"))
     private Player player;
 
-    @Column(name = "pokemon_id")
     @ManyToOne
     @JoinColumn(name = "pokemon_id", nullable = false,
             foreignKey = @ForeignKey(name = "fk_pokemonid_id"))
